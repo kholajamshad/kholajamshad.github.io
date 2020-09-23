@@ -1,0 +1,58 @@
+body{
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+#video{
+	background-color: black;
+	position: absolute;
+	top:90px;
+	left:130px;
+}
+
+.label{
+	position: relative;
+	text-align: center;
+}
+
+img{
+	width:250px;
+}
+
+#comic{
+	background-color: black;
+	position: absolute;
+	bottom:90px;
+	left:130px;
+}
+
+
+
+#sound{
+	background-color: black;
+	position: absolute;
+	top:90px;
+	right:130px;
+}
+
+#science{
+	background-color: black;
+	position: absolute;
+	bottom:90px;
+	right:130px;
+}
+
+#contact{
+	width:500px;
+	background-color: black;
+	position: absolute;
+	top:50px;
+	left:518px;
+}
+
+#contact img{
+	width:500px;
+}
+
