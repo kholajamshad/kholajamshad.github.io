@@ -1,3 +1,4 @@
+/*General Styling*/
 body{
 	background-color: black;
 	color: white;
@@ -5,6 +6,17 @@ body{
 	text-transform: uppercase;
 }
 
+h1, h2{
+  font-size: 30px;
+
+}
+
+img{
+  width:190px;
+}
+
+
+/*Navigation Bar Starts*/
 :root{
 	--background: rgba(75,0,130,.75);
 }
@@ -24,12 +36,7 @@ header {
   border: 0px;
 }
 
-/*nav bar*/
-
 nav {
-   
-    
-    /* the following lines are not from my video, but add Edge support */
     position: relative;
     width:100%;
     text-align: left;
@@ -38,8 +45,6 @@ nav {
     background: none;
     top: initial;
     left: initial;
-    /* end Edge support stuff */
-    
     grid-column: 3 / 4;
     display: flex;
     justify-content: flex-end;
@@ -91,58 +96,47 @@ transition: transform ease-in-out 250ms;
 nav a:hover::before {
 transform: scale(1,1);
 }
+/*Navigation Bar Ends*/
 
-/*nav bar*/
 
+/*Video Players and Titles Styling and Positioning*/
 
-h1{
-	font-size: 45px;
-	position:absolute;
-	top:15px;
-	left:600px;
-
+/*VIDEO 1*/
+#videobox1{
+  position: absolute;
+  left: 50px;
+  top:65px;
 }
 
-img{
-	width:190px;
+#descriptionbox1{
+  position: absolute;
+  right:70px;
+  top: 65px;
+  text-align: center;
+}
+
+/*VIDEO 2*/
+#videobox2{
+  position: absolute;
+  left: 50px;
+  top:800px;
+}
+
+#descriptionbox2{
+  position: absolute;
+  right:70px;
+  top: 800px;
+  text-align: center;
 }
 
 
-.vidtitle{
-	font-size: 35px;
-	left:100px;
+/*General Description Positioning for All Videos*/
+.arttitle{
+  position: relative;
+  top:320px;
 }
 
-#vid1{
-	
-	position: absolute;
-	top:95px;
-}
-
-#maskvid{
-	position: absolute;
-	top:175px;
-	left:60px;
-}
-
-#artists1{
-	position: absolute;
-	top:495px;
-	right:80px;
-}
-
-#at1{
-	position: absolute;
-	top:445px;
-	right:330px;
-}
-#bts1{
-	position: absolute;
-	top:115px;
-	right:340px;
-}
-
-#vid2{
-	position: absolute;
-	top:800px;
+.artists{
+  position: relative;
+  top:290px;
 }

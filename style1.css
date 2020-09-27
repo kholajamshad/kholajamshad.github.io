@@ -1,3 +1,4 @@
+/*General Styling of Text and Image*/
 body{
 	background-color: black;
 	color: white;
@@ -5,20 +6,23 @@ body{
 	text-transform: uppercase;
 }
 
-#video{
-	background-color: black;
-	position: absolute;
-	top:90px;
-	left:130px;
+img{
+	width:250px;
 }
+
 
 .label{
 	position: relative;
 	text-align: center;
 }
 
-img{
-	width:250px;
+
+/*Category Selection and Preview*/
+#video{
+	background-color: black;
+	position: absolute;
+	top:90px;
+	left:130px;
 }
 
 #comic{
@@ -27,8 +31,6 @@ img{
 	bottom:90px;
 	left:130px;
 }
-
-
 
 #sound{
 	background-color: black;
