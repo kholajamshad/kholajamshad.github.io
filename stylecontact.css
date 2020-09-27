@@ -1,0 +1,143 @@
+body{
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	font-family: serif;
+}
+
+:root{
+	--background: rgba(75,0,130,.75);
+}
+
+*, *::before,*::after{
+	box-sizing: border-box;
+}
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  border: 0px;
+}
+
+
+/*Navigation Bar Starts*/
+nav {
+    position: relative;
+    width:100%;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+	margin-left: 3em;
+	margin-bottom: 0;
+}
+  
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  opacity: 1;
+  position: relative;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+
+nav a::before {
+content: '';
+display: block;
+height: 5px;
+background: var(--background);
+position: absolute;
+top: -.75em;
+left: 0;
+right: 0;
+transform: scale(0, 1);
+transition: transform ease-in-out 250ms;
+}
+
+nav a:hover::before {
+transform: scale(1,1);
+}
+/*Nav bar ends*/
+
+
+/*Image+Name*/
+#condetails{
+	position:absolute;
+	top:50px;
+}
+
+#myimg{
+	width:600px;
+	position: relative;
+	top:50px;
+	left:50px;
+}
+
+#mydetails{
+	position: relative;
+	text-align: center;
+	top:50px;
+}
+
+
+/*Contact Links*/
+#contactbuttons{
+	position: absolute;
+	top:30px;
+	left:800px;
+}
+
+.mycontact{
+	position: relative;
+	text-align: center;
+	top:50px;
+	background-color: rgba(75,0,130);
+}
+
+#email{
+	position: relative;
+	left:150px;
+	width: 275px;
+}
+
+#address{
+	width: 600px;
+}
+
+
+/*Paragraph About Me*/
+#aboutme{
+	position: absolute;
+	top:250px;
+	left:800px;
+}
+
