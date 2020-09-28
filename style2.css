@@ -25,6 +25,12 @@ img{
 	box-sizing: border-box;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  border: 
+}
+
 header {
   background: var(--background);
   text-align: center;
@@ -76,7 +82,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #000;
+  color: rgb(139,0,72);
 }
 
 
@@ -115,28 +121,108 @@ transform: scale(1,1);
   text-align: center;
 }
 
+
 /*VIDEO 2*/
+/*
 #videobox2{
   position: absolute;
   left: 50px;
-  top:800px;
+  top:730px;
 }
 
 #descriptionbox2{
   position: absolute;
   right:70px;
-  top: 800px;
+  top: 730px;
   text-align: center;
 }
-
+*/
 
 /*General Description Positioning for All Videos*/
+.bts{
+  position: relative;
+  right:140px;
+}
 .arttitle{
   position: relative;
-  top:320px;
+  top:310px;
+  right:150px;
 }
 
 .artists{
   position: relative;
-  top:290px;
+  top:345px;
+  right:390px;
+  display: inline;
+}
+
+
+/*Adds Pop-up Artists Names*/
+.img_wrap{
+  position: relative;
+  left:0px;
+  width:190px;
+}
+
+.img_description{
+  position: absolute;
+  width:190px;
+  top: 130px;
+  background:rgb(75,0,130,0.35);
+  color: rgb(139,0,72)
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .2s, visibility .2s;
+}
+
+.img_wrap:hover .img_description{
+  visibility: visible;
+  opacity: 1;
+}
+
+.img_wrap2{
+  position: relative;
+  left:220px;
+  bottom:200px;
+  width:190px;
+}
+
+.img_description2{
+  position: absolute;
+  width:190px;
+  top: 170px;
+  background:rgb(75,0,130,0.35);
+  color: rgb(139,0,72)
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .2s, visibility .2s;
+}
+.img_wrap2:hover .img_description2{
+  visibility: visible;
+  opacity: 1;
+}
+
+.img_wrap3{
+  position: relative;
+  left:440px;
+  bottom:400px;
+  width:190px;
+}
+
+.img_description3{
+  position: absolute;
+  width:190px;
+  top: 170px;
+  background:rgb(75,0,130,0.35);
+  color: rgb(139,0,72)
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .2s, visibility .2s;
+}
+.img_wrap3:hover .img_description3{
+  visibility: visible;
+  opacity: 1;
 }
