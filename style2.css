@@ -112,6 +112,7 @@ transform: scale(1,1);
 
 #descriptionbox1{
   position: absolute;
+  height:650px;
   right:0px;
   top: 65px;
   text-align: center;
@@ -137,12 +138,23 @@ transform: scale(1,1);
 
 /*General Description Positioning for All Videos*/
 
-.bts1{
+#bts1{
   position: relative;
   height: 370px;
   width:220px;
   right:20px;
   top:0px;
+}
+
+#abutton{
+  position: relative;
+  bottom:170px;
+}
+
+#bbutton{
+  position: relative;
+  right:330px;
+  bottom: 170px;
 }
 
 .vidintro{
@@ -151,19 +163,19 @@ transform: scale(1,1);
   bottom:260px;
   text-transform: none;
   font-size: 20px;
-  width:330px;
+  width:280px;
   text-align: left;
 }
 
 .arttitle{
   position: relative;
-  bottom:150px;
+  bottom:180px;
   right:150px;
 }
 
 .artists{
   position: relative;
-  bottom:150px;
+  bottom:170px;
   right:360px;
   display: inline;
 }
