@@ -7,7 +7,7 @@ body{
 }
 
 img{
-	width:300px;
+	width:335px;
 	height:200px;
 }
 
@@ -19,51 +19,43 @@ a:hover{
 	color: rgb(139,0,72);
 }
 
-.label{
-	position: relative;
+
+/*Category Selection and Preview*/
+.col{
+	float: left;
+	margin-left: 55px;
+	margin-right: 55px;
+	margin-top: 30px;
 	text-align: center;
 }
 
+.left, .right{
+	width:25%;
+}
 
-/*Category Selection and Preview*/
-#video{
-	background-color: black;
-	position: absolute;
-	top:30px;
-	left:130px;
+.middle{
+	width:50%;
 }
 
 #comic{
-	background-color: black;
-	position: absolute;
-	bottom:50px;
-	left:130px;
-}
-
-#sound{
-	background-color: black;
-	position: absolute;
-	top:30px;
-	right:130px;
+	position: relative;
+	top:45px;
 }
 
 #science{
-	background-color: black;
-	position: absolute;
-	bottom:50px;
-	right:130px;
-}
-
-#contact{
-	width:500px;
-	background-color: black;
-	position: absolute;
-	top:50px;
-	left:518px;
+	position: relative;
+	top:45px;
 }
 
 #contact img{
 	width:500px;
 	height:500px;
+}
+
+/*Window Rescaling*/
+@media screen and (max-width: 600px){
+	.column{
+		width:100%;
+	}
 }
 
