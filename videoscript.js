@@ -1,5 +1,6 @@
-let abutton=document.getElementById("rbutton");
-let bbutton=document.getElementById("lbutton");
+/*Switching Between The Two BTS Images*/
+let rbutton=document.getElementById("rbutton");
+let lbutton=document.getElementById("lbutton");
 let currimg=document.getElementById("bts1");
 
 function img12(){
@@ -9,10 +10,10 @@ function img21(){
 	currimg.src="bts11.jpg";
 }
 
-abutton.addEventListener("click",() => {
+rbutton.addEventListener("click",() => {
 	img12();
 });
 
-bbutton.addEventListener("click",() => {
+lbutton.addEventListener("click",() => {
 	img21();
 })
