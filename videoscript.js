@@ -1,5 +1,5 @@
-let abutton=document.getElementById("abutton");
-let bbutton=document.getElementById("bbutton");
+let abutton=document.getElementById("rbutton");
+let bbutton=document.getElementById("lbutton");
 let currimg=document.getElementById("bts1");
 
 function img12(){

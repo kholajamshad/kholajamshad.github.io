@@ -27,7 +27,7 @@
 
   <body>
   	
-	<div id="videobox1">
+	<div id="videobox1" class="column">
 	 	<h1>
 	 		1.The Mask (2020)
 	 	</h1>
@@ -37,12 +37,15 @@
 	 	</video>
 	</div>
 
-	<div id="descriptionbox1">	
+	<div id="descriptionbox1" class="column">	
 
-	 	<img id="bts1" src="bts11.jpg">
+		<div class="gallery">
+		 	<img id="bts1" src="bts11.jpg">
 
-	 	<button id="abutton">></button>
-	 	<button id="bbutton"><</button>
+		 	<button id="lbutton"><</button>
+		 	<button id="rbutton">></button>
+	 	</div>
+	 	
 
 	 	 <div class="vidintro">
  			<p>
@@ -86,7 +89,7 @@
 </html>
 
 
- 	<!-- FOR FUTURE USE 
+ 	<!-- FOR FUTURE USE : to test if properties applied to first boxes would be replicated 
  	<div id="videobox2">
 	 	<h2>
 	 		2. Another One

@@ -54,7 +54,7 @@ a:hover{
 
 /*Window Rescaling*/
 @media screen and (max-width: 600px){
-	.column{
+	.col{
 		width:100%;
 	}
 }
