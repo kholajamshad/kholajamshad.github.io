@@ -171,13 +171,13 @@ transform: scale(1,1);
 .arttitle{
   position: relative;
   text-align: center;
-  bottom:180px;
+  bottom:145px;
   left:120px;
 }
 
 .artists{
   position: relative;
-  bottom:170px;
+  bottom:145px;
   display: inline;
 }
 
