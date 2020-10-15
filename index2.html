@@ -29,66 +29,55 @@
 
   <body>
   	
-  	<!--Video Title and Box-->
+  	<!--Video Title, Player and Toggle Description-->
 	<div id="videobox1" class="column">
 	 	<h1>
 	 		1.The Mask (2020)
 	 	</h1>
 
-	 	<video width=750px height=550px controls>
+	 	<video width=90% height=50% controls>
 	 		<source src="https://www.commlab.nyuadim.com/MangF20/The_Mask.mp4" type="video/mp4">
 	 	</video>
-	</div>
 
-
-	<!--Description Section-->
-	<div id="descriptionbox1" class="column">	
-
-		<div class="gallery">
-		 	<img id="bts1" src="bts11.jpg">
-
-		 	<button class="button" id="lbutton"><</button>
-		 	<button class="button" id="rbutton">></button>
-	 	</div>
-	 	
-
-	 	 <div class="vidintro">
- 			<p>
+	 	<div class="vidintro">
+	 		<div>
+	 			<button class="button" id="vidbutton1">></button>
+	 		</div>
+ 			<p id="vidintro1">
 	 			A short film based on different people across the world learning to live and interact together with the norm of wearing face masks during the COVID-19 pandemic.
 	 		</p>
 	 	</div>
+	</div>
 
 
-	 	<!--Artists Box-->
- 		<p class="arttitle">
-	 		Artists
-	 	</p>
+	<!--Artist Section:each of the three divs represent a pair of artist image and name-->
+	<div class="descriptionbox1">	
 
-	 	<div class="artists">
-	 		<div class="img_wrap">
-	 			<a href="https://kholajamshad.github.io/contact.html"><img class="img_img" src="contactpic.jpg"></a>
-	 			<p class="img_description">
-	 				Khola
-	 			</p>
-	 		</div>
-	 		<div class="img_wrap2">
-	 			<img class="img_img" src="dw.png">
-	 			<p class="img_description2">
-	 				Rakan
-	 			</p>
-	 		</div>
+ 		<div class="img_wrap">
+			<a href="https://kholajamshad.github.io/contact.html"><img class="img_img" id="1kholaimg" src="contactpic.jpg"></a>
+ 			<p class="img_description">
+ 				KHOLA
+ 			</p>
+ 		</div>
 
-	 		<div class="img_wrap3">
-	 			<img class="img_img" src="dw.png">
-	 			<p class="img_description3">
-	 				Treedom
-	 			</p>
-	 		</div>
-	 	</div>
+ 		<div class="img_wrap">
+ 			<img class="img_img" src="dw.png">
+ 			<p class="img_description">
+ 				RAKAN
+ 			</p>
+ 		</div>
 
+ 		<div class="img_wrap">
+ 			<img class="img_img" src="dw.png">
+ 			<p class="img_description">
+ 				TREEDOM
+ 			</p>
+ 		</div>
+	 	
  	</div>
 	 
 	 
+	 <!--Javascript Link-->
 	 <script src="videoscript.js"></script>
 
   </body>

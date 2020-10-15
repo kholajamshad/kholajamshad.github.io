@@ -1,20 +1,18 @@
+/*Still need to fix nav bar resizing*/
+/*Add my other video projects*/
+
 /*General Styling*/
 body{
 	background-color: black;
 	color: white;
-	font-size: 25px;
-	text-transform: uppercase;
+	font-size: 1.5em;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 h1, h2{
-  font-size: 30px;
-
+  font-size: 1.6em;
+  width:100%;
 }
-
-img{
-  width:190px;
-}
-
 
 /*Navigation Bar Starts*/
 :root{
@@ -59,7 +57,7 @@ nav ul {
 }
 
 nav li {
-	margin-left: 3em;
+	margin-left: 3.5em;
 	margin-bottom: 0;
 }
   
@@ -100,164 +98,63 @@ transform: scale(1,1);
 /*Video Players and Titles Styling and Positioning*/
 .column{
   float: left;
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  margin-right: 0em;
 }
 
 #videobox1{
-  width:53%;
+  width:70%;
+  display: block;
 }
 
-#descriptionbox1{
-  width: 27%;
+.vidintro{
+  display: flex;
+  flex-direction: row;
+  font-size: 0.55em;  
+}
+
+
+/*Artist Section Styling*/
+.descriptionbox1{
+  border: 0em;
+  margin:0em;
+  padding: 0em;
+  position: relative;
+  top: 2.8em;
+  width:20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; 
+  flex-wrap: wrap;
+}
+
+.img_description{
+  width: 7em;
+  border: 0em;
+  margin:0em;
+  padding: 0em;
+  background-color: rgba(75,0,130,.7);
   text-align: center;
+
 }
 
-@media screen and (max-width: 1400px){
-  #videobox1{
-    width: 100%;
-  }
+.img_img{
+  width: 7em;
 }
 
 
-/*Behind The Scenes Section Styling*/
-.gallery{
-  position: relative;
-  height: 370px;
-  width:250px;
-  top:0px;
-  left:300px;
-}
-
-#bts1{
-  position: relative;
-  height: 370px;
-  width:220px;
-  top:0px;
-  left:30px;
-}
-
+/*Toggle Button for Video Description*/
 .button{
   background-color: rgba(75,0,130);
   color: white;
 }
 
-#rbutton{
-  position: relative;
-  left:145px;
-  bottom:210px;
+
+/*Sets a Screen Limit to Switch from Resizing to Rearranging Artist Boxes*/
+@media screen and (max-width: 700px) {
+  .descriptionbox1 {
+    margin:auto;
+    width: 50%;
+  }
 }
-
-#lbutton{
-  position: relative;
-  right:85px;
-  bottom: 210px;
-}
-
-
-/*Video Description*/
-.vidintro{
-  position: relative;
-  bottom:260px;
-  text-transform: none;
-  font-size: 20px;
-  width:280px;
-  text-align: left;
-}
-
-
-/*Artist Box*/
-.arttitle{
-  position: relative;
-  text-align: center;
-  bottom:145px;
-  left:120px;
-}
-
-.artists{
-  position: relative;
-  bottom:145px;
-  display: inline;
-}
-
-/*Adds Pop-up Artist Names*/
-.img_wrap{
-  position: relative;
-  left:0px;
-  width:190px;
-  height: 166px;
-}
-
-.img_description{
-  position: absolute;
-  width:190px;
-  bottom:5px;
-  background:rgb(75,0,130,0.35);
-  color: rgb(139,0,72)
-  visibility: hidden;
-  opacity: 0;
-  border: 0px;
-  margin:0px;
-  padding: 0px;
-
-  transition: opacity .2s, visibility .2s;
-}
-
-.img_wrap:hover .img_description{
-  visibility: visible;
-  opacity: 1;
-}
-
-.img_wrap2{
-  position: relative;
-  left:220px;
-  bottom:185px;
-  width:190px;
-  height: 166px;
-}
-
-.img_description2{
-  position: absolute;
-  width:190px;
-  top:150px;
-  background:rgb(75,0,130,0.35);
-  color: rgb(139,0,72)
-  visibility: hidden;
-  opacity: 0;
-  border: 0px;
-  margin:0px;
-  padding: 0px;
-  transition: opacity .2s, visibility .2s;
-}
-.img_wrap2:hover .img_description2{
-  visibility: visible;
-  opacity: 1;
-}
-
-.img_wrap3{
-  position: relative;
-  left:440px;
-  bottom:350px;
-  width:190px;
-  height: 166px;
-}
-
-.img_description3{
-  position: absolute;
-  width:190px;
-  top:149px;
-  background:rgb(75,0,130,0.35);
-  color: rgb(139,0,72)
-  visibility: hidden;
-  opacity: 0;
-  border: 0px;
-  margin:0px;
-  padding: 0px;
-  transition: opacity .2s, visibility .2s;
-}
-.img_wrap3:hover .img_description3{
-  visibility: visible;
-  opacity: 1;
-}
-

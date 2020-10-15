@@ -1,19 +1,25 @@
-/*Switching Between The Two BTS Images*/
-let rbutton=document.getElementById("rbutton");
-let lbutton=document.getElementById("lbutton");
-let currimg=document.getElementById("bts1");
+/*Video Description Toggle*/
 
-function img12(){
-	currimg.src="bts12.png";
-}
-function img21(){
-	currimg.src="bts11.jpg";
-}
+/*Takes button and video description elements
+On mouse click, checks text in button with if-else condition
+And accordingly shows or hides description*/
+let button1=document.getElementById("vidbutton1");
+let vidintro1=document.getElementById("vidintro1");
 
-rbutton.addEventListener("click",() => {
-	img12();
+
+button1.addEventListener("click", () => {
+
+	if (button1.innerText==">"){
+		button1.innerHTML="v";
+		vidintro1.innerHTML="";
+	}
+
+	else{
+		button1.innerHTML=">";
+		vidintro1.innerHTML="A short film based on different people across the world learning to live and interact together with the norm of wearing face masks during the COVID-19 pandemic.";
+	}
 });
 
-lbutton.addEventListener("click",() => {
-	img21();
-})
+
+
+
