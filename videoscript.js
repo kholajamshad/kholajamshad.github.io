@@ -11,7 +11,7 @@ button1.addEventListener("click", () => {
 
 	if (button1.innerText==">"){
 		button1.innerHTML="v";
-		vidintro1.innerHTML="";
+		vidintro1.innerHTML="Description";
 	}
 
 	else{
