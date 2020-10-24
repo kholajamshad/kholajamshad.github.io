@@ -1,0 +1,314 @@
+html, body {
+    margin:0;                             /* clear any default margin */
+    height:100%;
+  }
+
+/* PANEL 1: Sunrise in Bedroom */
+.panel1 {
+    background-color: #0c2147;
+    width:100%;
+    height: 100%;
+    overflow-y: hidden;
+    animation: sky 7s forwards;
+}
+
+@keyframes sky {
+    50% {
+        background-color: #7dbdf1;
+    }
+    100% {
+        background-color: #aae3fa;
+    }
+}
+
+#img_bedroom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.sun {
+    background-color: #ffc21a;
+    height: 7vw;
+    width: 7vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 29.5%;
+    bottom: 0;
+    box-shadow: 0px 0px 20px 5px #ffc21a;
+    animation: sunset 10s forwards;
+}
+
+@keyframes sunset {
+    100% {
+        transform: translateY(-500px);
+    }
+}
+
+.panelStandard {
+    position: relative;
+    width:100%;
+    height:100%;
+
+}
+
+/* PANEL BACKGROUNDS */
+/* Panel 2: Waking up */
+
+#img_bed {
+    width: 100%;
+    height: 100%;
+}
+
+/* Panel 3 (and 10): Bathroom */
+#img_bathroom {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Panel 4 (and 8): Living Room (Breakfast and Workout) */
+#img_livingRoom {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Panel 5 (and 7): Zoom */
+
+
+/* Panel 6 (and 9): Lunch (and Dinner) in D2 */
+#img_d2 {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Panel 11: Bed */
+#img_bedNight {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* New Day Button */
+
+.button_cont {
+    width:13%;
+    position: relative;
+    left:87%;
+    bottom: 10%;
+}
+
+.example_f {
+   border-radius: 4px;
+   background-color: black;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 17px;
+   padding: 20px;
+   width: 200px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+ }
+ .example_f span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_f span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .example_f:hover span {
+   padding-right: 25px;
+ }
+ .example_f:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
+/* CHARACTER */
+.student{
+    position: absolute;
+    width: 40%;
+    bottom: 0.5em;
+    height: 95%;
+    left:27%;
+}
+
+.student img{
+    width: 100%;
+    height:100%;
+}
+
+/* OBJECTS */
+
+.toothbrush{   
+    position: absolute;
+    top:58%;
+    right:30%;
+    width:15%;
+    height:13%;
+    z-index:900;
+}
+
+.toothbrush img{
+    width:100%;
+}
+
+.cerealbowl{
+    position: absolute;
+    bottom:0%;
+    left:40%;
+    width:20%;
+    z-index:900;
+}
+
+.cerealbowl img{   
+    width:100%;
+}
+
+.coffee{
+    position: absolute;
+    top:66%;
+    left:27%;
+    width:5%;
+}
+
+.coffee img{
+    width:100%;
+}
+
+.lunchfood{
+    position: absolute;
+    bottom:-0.5em;
+    left:33%;
+    width:30%;
+    z-index: 900;
+}
+
+.lunchfood img{
+    width:100%;
+}
+
+.headphones{
+    position: absolute;
+    top:0%;
+    left:29%;
+    width:35%;
+    z-index: 900;
+}
+.headphones img{
+    width: 100%;
+}
+.droplet{
+    position: absolute;
+    top:33%;
+    left:36%;
+    width:2%;
+    z-index: 900;
+}
+
+.droplet img{
+    width: 100%;
+}
+
+.dumbell{
+    position: absolute;
+    top:73%;
+    right:15%;
+    width:9%;
+}
+.dumbell img{
+    width:100%;
+}
+
+.dinnerplate{
+    position: absolute;
+    bottom:0;
+    left:35%;
+    width: 28%;
+    z-index: 900;
+}
+.dinnerplate img{
+    width: 100%;
+}
+
+.shower{
+    position: absolute;
+    right:0;
+}
+
+
+
+.wd{
+    width:2%;
+    position: absolute;
+}
+
+.wd img{
+    width:100%;
+}
+
+#wd1{
+    right:30%;
+    top:40%;
+}
+#wd2{
+    right:19%;
+    top:30%;
+}
+#wd3{
+    right:25%;
+    top:45%;
+}
+#wd4{
+    right:18%;
+    top:40%;
+}
+#wd5{
+    right:35%;
+    top:70%;
+}
+#wd6{
+    right:27%;
+    top:60%;
+}
+#wd7{
+    right:35%;
+    top:55%;
+}
+
+.foam{
+    position: absolute;
+    left:30%;
+    top: 2%;
+    width:35%;
+    z-index: 900;
+}
+
+.foam img{
+    width: 100%;
+
+}
+
+.zzz{
+    position: absolute;
+    right:25%;
+    bottom:42%;
+    width:15%;
+    z-index: 900;
+}
+
+.zzz img{
+    width:100%;
+}
