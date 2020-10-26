@@ -108,6 +108,10 @@ transform: scale(1,1);
   display: block;
 }
 
+#comicbox1 img{
+  width:95%;
+}
+
 #comicbox2{
   width:70%;
   display: block;
