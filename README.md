@@ -1,7 +1,7 @@
 # kholajamshad.github.io
 "web portfolio for comm lab."
 
-30MFF Website
+1. 30MFF Website
 
 This projects aims to create a website for the presentation of my portfolio. This will primarily include projects from my Communications Lab course taken in Fall 2020 at NYUAD. I will also be including any other artistic work or scientific communication ventures I have worked on.
 
@@ -15,3 +15,5 @@ I think that deciding the layout would have been a lot more productive for me wi
 
 Khola Jamshad (kj1263)
 01/10/2020
+
+
