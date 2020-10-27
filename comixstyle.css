@@ -159,6 +159,10 @@ body {
     width:100%;
 }
 
+.toothbrush:hover{
+    cursor: pointer;
+}
+
 
 /*Panel 4*/
 /* Cereal */
