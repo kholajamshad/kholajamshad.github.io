@@ -119,6 +119,27 @@ music.onclick = function() {
 }
 
 
+/*Panel 7: Zoom Meeting Is Being Recorded Message*/
+var zoomrecord1 = new Audio("zoomSound.mp3");
+let record1=document.getElementById("record1");
+var record1counter=0;
+
+record1.onclick = function() {
+	if (record1counter==0){
+		zoomrecord1.play();
+		record1counter++;
+		zoomrecord1.addEventListener("ended", function() {
+			this.currentTime = 0;
+			record1counter=0;
+		});
+	}
+	else if(record1counter==1){
+		zoomrecord1.pause();
+		record1counter=0;
+	}
+}
+
+
 /*Panel 9: Background Noise in D2 at Dinner*/
 var d2 = new Audio("d2.mp3");
 let noise=document.getElementById("noise");
