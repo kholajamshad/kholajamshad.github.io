@@ -1,16 +1,135 @@
-body{
-	background-color: purple;
+body {
+  background-color: #89cff0;
+  font-family: "Architects Daughter";
+  font-size: 1.5em;
+  background-image: url("./images/background1.jpg");
 }
 
-.cat{
-	position:relative;
-	width:150px;
-	height:150px;
-	background-color: black;
-	border-radius: 50%;
+
+
+/*large container with all the divs inside*/
+.container {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#evil{
-	top:470px;
-	left:1080px;
+/*speaker image positioning and design*/
+.main {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.main img {
+  height: 90vh;
+  border-radius: 8%;
+  cursor:default;
+}
+
+.img_credits {
+  font-size: 0.6em;
+  position: relative;
+  top:700px;
+  right:0px;
+}
+
+
+
+/*cat icon positioning and interactive design on hover*/
+.right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10vh;
+}
+.rightText {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.headerTextDiv {
+  max-width: 100%;
+  height: auto;
+  white-space: nowrap;
+}
+.headerText {
+  margin-top: 0;
+  font-size: 2.5em;
+  padding-bottom: 5vh;
+}
+
+/*div for the cat faces*/
+.thumbnails {
+  padding-left: 1.5vw;
+  margin: 3px;
+  display: flex;
+  flex-direction: row;
+}
+.thumbnails img {
+  opacity: 0.6;
+  float: left;
+  width: 90%;
+  height: 100%;
+}
+
+.thumbnails img:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*specific outline to first set logocat as the preset choice */
+#logocat {
+  opacity: 1;
+}
+
+/*control buttons positioning and interactive design on hover*/
+.controls {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+  text-align: center;
+}
+
+.controls img {
+  width: 60%;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.controls img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 5px rgba(0, 0, 0, 0.19);
+  border-radius: 100px;
+}
+/*START PAGE CSS*/
+
+/*flexbox to wrap the elements*/
+.startText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*image of the start paw*/
+#pawStart {
+  cursor: pointer;
+  padding-top: 50px;
+  width: 80%;
+}
+
+/*resizeability */
+@media screen and (max-width: 1024px) {
+  .headerTextDiv {
+    white-space: normal;
+  }
+  .main img {
+    max-width: 100%;
+    height: auto;
+  }
 }

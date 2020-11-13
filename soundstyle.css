@@ -1,0 +1,158 @@
+/*Still need to fix nav bar resizing*/
+/*Add my other video projects*/
+
+/*General Styling*/
+body{
+	background-color: black;
+	color: white;
+	font-size: 1.5em;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+h1{
+  font-size: 1.6em;
+  width:100%;
+}
+
+/*Navigation Bar Starts*/
+:root{
+	--background: rgba(75,0,130,.9);
+}
+
+*, *::before,*::after{
+	box-sizing: border-box;
+}
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  border: 0px;
+}
+
+nav {
+    position: relative;
+    width:100%;
+    text-align: left;
+    transition: none;
+    transform: scale(1,1);
+    background: none;
+    top: initial;
+    left: initial;
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+	margin-left: 3.5em;
+	margin-bottom: 0;
+}
+  
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  opacity: 1;
+  position: relative;
+}
+
+nav a:hover {
+  color: rgb(139,0,72);
+}
+
+nav a::before {
+content: '';
+display: block;
+height: 5px;
+background: var(--background);
+position: absolute;
+top: -.75em;
+left: 0;
+right: 0;
+transform: scale(0, 1);
+transition: transform ease-in-out 250ms;
+}
+
+nav a:hover::before {
+transform: scale(1,1);
+}
+/*Navigation Bar Ends*/
+
+
+/*Video Players and Titles Styling and Positioning*/
+.column{
+  float: left;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  margin-right: 0em;
+}
+
+#soundbox1{
+  width:70%;
+  display: block;
+}
+
+#soundbox1 img{
+  width:45%;
+}
+
+
+.cover{
+  width: 50%;
+}
+
+/*Artist Section Styling*/
+.descriptionbox1{
+  border: 0em;
+  margin:0em;
+  padding: 0em;
+  position: relative;
+  top: 2.5em;
+  width:20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  flex-wrap: wrap;
+}
+
+.img_description{
+  width: 7em;
+  border: 0em;
+  margin:0em;
+  padding: 0em;
+  background-color: rgba(75,0,130,.7);
+  text-align: center;
+
+}
+
+.img_img{
+  width: 7em;
+}
+
+
+
+/*Sets a Screen Limit to Switch from Resizing to Rearranging Artist Boxes*/
+@media screen and (max-width: 700px) {
+  .descriptionbox1 {
+    margin:auto;
+    top:1em;
+    width: 50%;
+  }
+}
