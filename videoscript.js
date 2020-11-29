@@ -1,8 +1,11 @@
+AOS.init();
 /*Video Description Toggle*/
 
 /*Takes button and video description elements
 On mouse click, checks text in button with if-else condition
 And accordingly shows or hides description*/
+
+/*
 let button1=document.getElementById("vidbutton1");
 let vidintro1=document.getElementById("vidintro1");
 
@@ -53,3 +56,5 @@ button3.addEventListener("click", () => {
 		vidintro3.innerHTML="An artificial chimera's journey of constant change from its first to final breath";
 	}
 });
+
+*/

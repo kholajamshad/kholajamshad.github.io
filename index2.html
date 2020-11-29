@@ -1,3 +1,7 @@
+<!--
+1. Add final video project
+2. Add Rakan and Treedom mask icons
+-->
 <!DOCTYPE html> 
 <html>
 
@@ -8,6 +12,7 @@
     <title>Khola-Videos</title>
 
     <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> <!--Animate on Scroll css-->
 
     <!--Navigation Bar Starts-->
     <header>  
@@ -28,83 +33,127 @@
 
 
   <body>
-  	
-  	<!--Video Title, Player and Toggle Description-->
-	<div id="videobox1" class="column">
-	 	<h1>
-	 		The Mask (2020)
-	 	</h1>
+  	<div class="container">
+  		<p class="space">
+		</p>
+	  	<!--Video Title, Player and Toggle Description-->
+		<div id="videobox1" class="column">
+		 	<h1>
+		 		The Mask (2020)
+		 	</h1>
 
-	 	<video width=90% height=50% controls>
-	 		<source src="https://www.commlab.nyuadim.com/MangF20/The_Mask.mp4" type="video/mp4">
-	 	</video>
+		 	<div class="contentdiv">
 
-	 	<div class="vidintro">
-	 		<div>
-	 			<button class="button" id="vidbutton1">v</button>
+			 	<video width=70% height=550 controls>
+			 		<source src="https://www.commlab.nyuadim.com/MangF20/The_Mask.mp4" type="video/mp4">
+			 	</video>
+
+			 	<div class="introdiv">
+			 		<div class="artists">
+			 			<div class="art">
+			 				<p>Rakan</p>
+			 			</div>
+			 			<div class="art">
+			 				<p>Treedom</p>
+			 			</div>
+			 		</div>
+				 	<div class="vidintro" data-aos="fade-left" data-aos-duration="1000">
+				 		<p>
+				 		"A short film based on different people across the world learning to live and interact together with the norm of wearing face masks during the COVID-19 pandemic."
+				 		</p>
+				 		<!--
+				 		<div>
+				 			<button class="button" id="vidbutton1">v</button>
+				 		</div>
+			 			<p id="vidintro1">Description</p>
+			 		-->
+				 	</div>
+				 </div>
+			</div>
+		</div>
+
+		<p class="space">
+		</p>
+		<!--Artist Section:each of the three divs represent a pair of artist image and name-->
+		<!--
+		<div class="descriptionbox1">	
+
+	 		<div class="img_wrap">
+	 			<img class="img_img" src="dw.png">
+	 			<p class="img_description">
+	 				RAKAN
+	 			</p>
 	 		</div>
- 			<p id="vidintro1">Description</p>
-	 	</div>
-	</div>
 
-
-	<!--Artist Section:each of the three divs represent a pair of artist image and name-->
-	<div class="descriptionbox1">	
-
- 		<div class="img_wrap">
- 			<img class="img_img" src="dw.png">
- 			<p class="img_description">
- 				RAKAN
- 			</p>
- 		</div>
-
- 		<div class="img_wrap">
- 			<img class="img_img" src="dw.png">
- 			<p class="img_description">
- 				TREEDOM
- 			</p>
- 		</div>
-	 	
- 	</div>
-	 
-
-
-	 <!--VIDEO 2-->
-	<div id="videobox2" class="column">
-	 	<h1>
-	 		The Great Experiment
-	 	</h1>
-
-		<iframe width=90% height="500" src="https://www.youtube.com/embed/DkOZwEsQbo4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-	 	<div class="vidintro">
-	 		<div>
-	 			<button class="button" id="vidbutton2">v</button>
+	 		<div class="img_wrap">
+	 			<img class="img_img" src="dw.png">
+	 			<p class="img_description">
+	 				TREEDOM
+	 			</p>
 	 		</div>
- 			<p id="vidintro2">Description</p>
+		 	
 	 	</div>
-	</div>
+		 -->
+		 
 
 
-	<div id="videobox3" class="column">
-	 	<h1>
-	 		Mayfly
-	 	</h1>
+		 <!--VIDEO 2-->
+		<div id="videobox2" class="column">
+		 	<h1>
+		 		The Great Experiment
+		 	</h1>
 
-		<iframe width=90% height="500" src="https://www.youtube.com/embed/QOGVHy36lU8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 	<div class="contentdiv">
 
-	 	<div class="vidintro">
-	 		<div>
-	 			<button class="button" id="vidbutton3">v</button>
-	 		</div>
- 			<p id="vidintro3">Description</p>
-	 	</div>
+				 <div class="introdiv">
+
+				 	<div class="vidintro" data-aos="fade-right" data-aos-duration="1000">
+				 		<p>
+				 		"A retelling of the Earth experiment from Hitchhiker's Guide to the Galaxy from the perspective of the mice participating in it."
+				 		</p>
+				 	</div>
+
+				 </div>
+
+				 <iframe width=70% height="550" src="https://www.youtube.com/embed/DkOZwEsQbo4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<p class="space">
+		</p>
+
+
+
+		<!--VIDEO 3-->
+		<div id="videobox3" class="column">
+		 	<h1>
+		 		Mayfly
+		 	</h1>
+
+
+		 	<div class="contentdiv">
+
+				<iframe width=70% height="550" src="https://www.youtube.com/embed/QOGVHy36lU8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			 	<div class="introdiv">
+
+				 	<div class="vidintro" data-aos="fade-left" data-aos-duration="1000">
+				 		<p>
+				 		"An artificial chimera's journey of constant change from its first to final breath."
+				 		</p>
+
+				 	</div>
+				 </div>
+			</div>
+			
+		</div>
 	</div>
 
 
 	 
 	 <!--Javascript Link-->
+	 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> <!--Animate on Scroll js-->
 	 <script src="videoscript.js"></script>
+
 
   </body>
 
