@@ -87,57 +87,54 @@ nav a:hover::before {
 transform: scale(1,1);
 }
 /*Nav bar ends*/
-
-
-/*Image+Name*/
-#condetails{
-	position:absolute;
-	top:50px;
+.container{
+  position: relative;
+  top:45px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.condetails{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 #myimg{
-	width:600px;
-	position: relative;
-	top:50px;
-	left:50px;
+  width: 100%;
+  height: 90%;
+}
+.info{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: 
 }
 
-#mydetails{
-	position: relative;
-	text-align: center;
-	top:50px;
+
+.contactbuttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-
-/*Contact Links*/
-#contactbuttons{
-	position: absolute;
-	top:30px;
-	left:800px;
+.icon{
+  width: 20%;
+  border-radius: 30%; 
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-.mycontact{
-	position: relative;
-	text-align: center;
-	top:50px;
-	background-color: rgba(75,0,130);
+#emailicon{
+  width:60%;
 }
-
+#emailicon:hover{
+  width: 70%;
+}
 #email{
-	position: relative;
-	left:150px;
-	width: 275px;
+  width:60%;
+  visibility: hidden;
 }
-
-#address{
-	width: 600px;
-}
-
-
-/*Paragraph About Me*/
-#aboutme{
-	position: absolute;
-	top:250px;
-	left:800px;
-}
-
