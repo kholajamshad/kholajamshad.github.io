@@ -8,6 +8,7 @@
     <title>Khola-Comics</title>
 
     <link rel="stylesheet" href="comicstyle.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> <!--Animate on Scroll css-->
 
     <!--Navigation Bar Starts-->
     <header>  
@@ -17,7 +18,7 @@
 		      <li><a href="https://kholajamshad.github.io/contact.html">Contact</a></li>
 		      <li><a href="https://kholajamshad.github.io/index2.html">Videos</a></li>
 		      <li><a href="https://kholajamshad.github.io/comics.html">Comics</a></li>
-		      <li><a href="#">Sounds</a></li>
+		      <li><a href="https://kholajamshad.github.io/sound.html">Sounds</a></li>
 		      <li><a href="#">Science</a></li>
 		    </ul>
 	  	</nav>  
@@ -28,62 +29,101 @@
 
 
   <body>
-  	
-  	<!--Comic Title and Cover Art-->
-	<div class="column" id="comicbox1">
-	 	<h1>
-	 		Comix: Wake-Up, Zoom, Sleep, Repeat
-		</h1>
 
-	 	<a href="https://kholajamshad.github.io/comix.html"><img class="cover" src="bedroom.gif"></a>
-
-	</div>
-
-
-	<!--Artist Section:each of the three divs represent a pair of artist image and name-->
-	<div class="descriptionbox1">	
-
- 		<div class="img_wrap">
- 			<img class="img_img" src="dw.png">
- 			<p class="img_description">
- 				ARIYA
- 			</p>
- 		</div>
-
- 		<div class="img_wrap">
- 			<img class="img_img" src="dw.png">
- 			<p class="img_description">
- 				NADJA
- 			</p>
- 		</div>
-	 	
- 	</div>
 	 
+ 	<div class="container">
+  		<p class="space">
+		</p>
+	  	<!--Comic Title, Link and Description-->
+
+	  	<!--Comic 1-->
+		<div id="box1" class="column">
+		 	<h1>
+		 		Comix: Wake-Up, Zoom, Sleep, Repeat
+		 	</h1>
+
+		 	<div class="contentdiv">
+
+		 		<div class="icon">
+			 		<a href="https://kholajamshad.github.io/comix.html"><img src="bedroom.gif"></a>
+			 	</div>
+
+			 	<div class="introdiv">
+			 		<div class="artists">
+			 			<div class="art" data-aos="zoom-in" data-aos-duration="1000">
+			 				<p>Ariya</p>
+			 			</div>
+			 			<div class="art" data-aos="zoom-in" data-aos-duration="1000">
+			 				<p>Nadja</p>
+			 			</div>
+			 		</div>
+
+				 	<div class="intro" data-aos="fade-left" data-aos-duration="1000">
+				 		<p>
+				 		"A short film based on different people across the world learning to live and interact together with the norm of wearing face masks during the COVID-19 pandemic."
+				 		</p>
+				 	</div>
+				 </div>
+			</div>
+		</div>
+
+  		<p class="space">
+		</p>
+
+		<!--Comic 2-->
+		<div id="box2" class="column">
+		 	<h1>
+		 		3I-stories **Coming Soon**
+		 	</h1>
+
+		 	<div class="contentdiv">
+				<div class="introdiv">
+				 	<div class="intro" data-aos="fade-right" data-aos-duration="1000">
+				 		<p>
+				 		"A retelling of the Earth experiment from Hitchhiker's Guide to the Galaxy from the perspective of the mice participating in it."
+				 		</p>
+				 	</div>
+				</div>
+
+				<div class="icon">
+					<img src="spiralintro1.png">
+				</div>
+			</div>
+		</div>
+
+		<p class="space">
+		</p>
 
 
-	 <!--VIDEO 2-->
-	<div id="comicbox2" class="column">
-	 	<h1>
-	 		3I-stories **Coming Soon**
-	 	</h1>
+		<!--Comic 3-->
+		<div id="box3" class="column">
+		 	<h1>
+		 		hMan
+		 	</h1>
 
-		<img class="cover" src="dw.png">
+
+		 	<div class="contentdiv">
+		 		<div class="icon">
+					<img src="spiralintro1.png">
+				</div>
+
+			 	<div class="introdiv">
+				 	<div class="intro" data-aos="fade-left" data-aos-duration="1000">
+				 		<p>
+				 		"An artificial chimera's journey of constant change from its first to final breath."
+				 		</p>
+				 	</div>
+				</div>
+			</div>
+		</div>
 
 	</div>
 
-
-	<div id="comicbox3" class="column">
-	 	<h1>
-	 		hMAN **Coming Soon**
-	 	</h1>
-
-		<img class="cover" src="dw.png">
-
-	</div>
 
 
 	 
 	 <!--Javascript Link-->
+	  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> <!--Animate on Scroll js-->
 	 <script src="comicscript.js"></script>
 
   </body>
