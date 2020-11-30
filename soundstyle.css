@@ -130,7 +130,7 @@ transform: scale(1,1);
   flex-wrap: wrap;
 }
 .introdiv{
-  width: 25%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -143,7 +143,7 @@ transform: scale(1,1);
   justify-content: space-around;
 }
 .art{
-  width: 45%;
+  width: 30%;
   height: 100%;
   background-color: black;
   border-radius: 30%;
@@ -158,7 +158,7 @@ transform: scale(1,1);
 }
 
 .icon{
-  width:55%;
+  width:47%;
 }
 .icon img{
   width: 100%;
