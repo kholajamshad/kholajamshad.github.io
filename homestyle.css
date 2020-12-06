@@ -18,9 +18,6 @@ a{
 	text-decoration: none;
 }
 
-a:hover{
-	color: rgb(139,0,72);
-}
 
 
 :root{
@@ -72,6 +69,7 @@ nav li {
 	margin-bottom: 0;
 }
   
+/*navigation link styling*/
 nav a {
   color: white;
   text-decoration: none;
@@ -81,10 +79,6 @@ nav a {
   transition: opacity 150ms ease-in-out;
   opacity: 1;
   position: relative;
-}
-
-nav a:hover {
-  color: rgb(139,0,72);
 }
 
 
@@ -106,25 +100,38 @@ transform: scale(1,1);
 }
 /*Nav bar ends*/
 
-.row1, .row2, .row3{
-  width: 100%;
-  display: inline;
+/*Whole Body Flex Display for the 3 rows*/
+.container{
   position: relative;
+  top: 1.7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/*Flex display for all the tiles in each row*/
 .row1{
-  top:1.7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
 .row2{
-  top:1.85em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
-
 .row3{
-  top:1.95em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
+/*highlights outline of boxes on hover to show user where they could click*/
 .glow:hover{
   outline: rgb(75,0,130) solid 3px;
+}
+
+/*space between rows*/
+.space{
+  margin: 0.25em;
 }

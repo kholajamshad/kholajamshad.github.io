@@ -11,7 +11,8 @@ body{
 
 h1{
   font-size: 1.6em;
-  width:90%;
+  width:100%;
+  text-align: center;
 }
 
 /*Navigation Bar Starts*/
@@ -61,7 +62,8 @@ nav li {
 	margin-left: 3.5em;
 	margin-bottom: 0;
 }
-  
+
+/*navigation link styling*/
 nav a {
   color: white;
   text-decoration: none;
@@ -73,9 +75,7 @@ nav a {
   position: relative;
 }
 
-nav a:hover {
-  color: rgb(139,0,72);
-}
+
 
 nav a::before {
 content: '';
@@ -97,6 +97,7 @@ transform: scale(1,1);
 
 
 /*Video Players and Titles Styling and Positioning*/
+/*Whole page display*/
 .container{
   display:flex;
   flex-direction: column;
@@ -105,12 +106,8 @@ transform: scale(1,1);
   overflow-x: hidden;
 }
 
-.space{
-  height: 2em;
-  background-color: black;
-  margin:0;
-}
 
+/*Display of each box*/
 .column{
   width:100%;
   display: flex;
@@ -118,6 +115,7 @@ transform: scale(1,1);
   align-items: center;
 }
 
+/*Different colors for the boxes*/
 #box1{
   background-color: rgb(148,25,67);
 }
@@ -130,6 +128,8 @@ transform: scale(1,1);
   background-color: rgb(148,25,67);
 }
 
+
+/*Video + Description + Artist display*/
 .contentdiv{
   width: 100%;
   display:flex;
@@ -137,26 +137,41 @@ transform: scale(1,1);
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+/*Description + Artist display*/
 .introdiv{
   width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
+
+/*Artist section display*/
 .artists{
   width: 100%;
-  height: 50%;
+  height: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+/*Individual artist boxes*/
 .art{
   width: 45%;
   height: 100%;
-  background-color: black;
+  border: black solid 5px;
   border-radius: 30%;
   text-align: center;
 }
+/*Artist icons styling and enlarging on hover*/
+.art img{
+  width: 85%;
+}
+.art img:hover{
+  width: 95%;
+  cursor: pointer;
+}
+
+/*Description*/
 .intro{
   width: 100%;
   display: flex;
@@ -165,41 +180,10 @@ transform: scale(1,1);
   font-size: 0.9em;  
 }
 
-/*Artist Section Styling*/
-/*
-.descriptionbox1{
-  border: 0em;
-  margin:0em;
-  padding: 0em;
-  position: relative;
-  top: 3.5em;
-  width:20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; 
-  flex-wrap: wrap;
+
+/*Space between boxes*/
+.space{
+  height: 2em;
+  background-color: black;
+  margin:0;
 }
-
-.img_description{
-  width: 7em;
-  border: 0em;
-  margin:0em;
-  padding: 0em;
-  background-color: rgba(75,0,130,.7);
-  text-align: center;
-
-}
-
-.img_img{
-  width: 7em;
-}
-*/
-
-/*Toggle Button for Video Description
-.button{
-  background-color: rgba(75,0,130);
-  color: white;
-}
-
-*/

@@ -11,7 +11,8 @@ body{
 
 h1{
   font-size: 1.6em;
-  width:90%;
+  width:100%;
+  text-align: center;
 }
 
 /*Navigation Bar Starts*/
@@ -61,6 +62,7 @@ nav li {
 	margin-bottom: 0;
 }
   
+/*navigation link styling*/
 nav a {
   color: white;
   text-decoration: none;
@@ -72,9 +74,7 @@ nav a {
   position: relative;
 }
 
-nav a:hover {
-  color: rgb(139,0,72);
-}
+
 
 nav a::before {
 content: '';
@@ -96,6 +96,7 @@ transform: scale(1,1);
 
 
 /*Video Players and Titles Styling and Positioning*/
+/*Whole page display*/
 .container{
   display:flex;
   flex-direction: column;
@@ -104,12 +105,8 @@ transform: scale(1,1);
   overflow-x: hidden;
 }
 
-.space{
-  height: 2em;
-  background-color: black;
-  margin:0;
-}
 
+/*Display of each box*/
 .column{
   width:100%;
   display: flex;
@@ -129,6 +126,8 @@ transform: scale(1,1);
   background-color: rgb(148,25,67);
 }
 
+
+/*Video + Description + Artist display*/
 .contentdiv{
   width: 100%;
   display:flex;
@@ -136,34 +135,16 @@ transform: scale(1,1);
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+/*Description + Artist display*/
 .introdiv{
   width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.artists{
-  width: 100%;
-  height: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.art{
-  width: 45%;
-  height: 100%;
-  background-color: black;
-  border-radius: 30%;
-  text-align: center;
-}
-.intro{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 0.9em;  
-}
 
+/*Cover image*/
 .icon{
   width:60%;
   display: flex;
@@ -174,5 +155,45 @@ transform: scale(1,1);
   width: 100%;
 }
 
+/*Artist section display*/
+.artists{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/*Individual artist boxes*/
+.art{
+  width: 45%;
+  height: 100%;
+  border: black solid 5px;
+  border-radius: 30%;
+  text-align: center;
+}
+/*Artist icons styling and enlarging on hover*/
+.art img{
+  width: 90%;
+}
+.art img:hover{
+  width: 100%;
+  cursor: pointer;
+}
 
 
+/*Description*/
+.intro{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 0.9em;  
+}
+
+
+/*Space between boxes*/
+.space{
+  height: 2em;
+  background-color: black;
+  margin:0;
+}
