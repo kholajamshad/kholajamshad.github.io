@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>HomeCampus</title>
+
+    <link rel="stylesheet" href="homecampus.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> <!--Font -->
+  </head>
+
+  <body>
+
+  	<!--STARTING PAGE DISPLAY WITH QUESTION AND ICONS-->
+  	<div class="divide">
+  		<div class="question" id="question">
+  			<p>Where are you now?</p>
+  		</div>
+
+  		<div class="screens">
+
+  			<!--trailers and icons for campus and home-->
+		  	<div class="screen">
+		  		<video class="bg" id="campusbg" muted loop>
+		  			<source src="./videos/campustrailers.mp4" type="video/mp4">
+		  		</video>
+				<img class="icon" id="campusicon" src="./images/campus black and white.png">
+		  	</div>
+
+		  	<div class="screen">
+		  		<video class="bg" id="homebg" muted loop>
+		  			<source src="./videos/hometrailers.mp4" type="video/mp4">
+		  		</video>
+				<img class="icon" id="homeicon" src="./images/black and white home.png">
+		  	</div>
+
+		 </div>
+ 	</div>
+
+
+ 	<!--VIDEOS AND CLOSE BUTTON THAT SHOWS UP ON ICON CLICK-->
+ 	<div class="viddiv">
+ 		<!--home video-->
+ 		<div class="vid" id="vid">
+ 			<iframe width="70%" height="80%" src="https://www.youtube.com/embed/0c9ycqIH618" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 		</div>
+ 		<!--campus video-->
+ 		 <div class="vid" id="vid2">
+ 			<iframe width="70%" height="80%" src="https://www.youtube.com/embed/2ESKUbqXZpw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 		</div>
+
+ 		<!--button to close video and return to start page-->
+		<button class="close" id="close">X</button>
+	</div>
+
+
+    <script src="homecampus.js"></script>
+  </body>
+
+</html>
+
