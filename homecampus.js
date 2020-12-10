@@ -1,18 +1,24 @@
 //VARIABLE DECLARATIONS
-let homeicon=document.getElementById("homeicon");
-let campusicon=document.getElementById("campusicon");
-let campusbg=document.getElementById("campusbg");
-let homebg=document.getElementById("homebg");
-let question=document.getElementById("question");
-let video=document.getElementById("vid");
-let video2=document.getElementById("vid2");
-let close=document.getElementById("close");
+let homeicon=document.getElementById("homeicon"); //home icon
+let campusicon=document.getElementById("campusicon"); //campus icon
+let campusbg=document.getElementById("campusbg"); //campus background trailer
+let homebg=document.getElementById("homebg"); //home background trailer
+let question=document.getElementById("question"); //title and question div
+let video=document.getElementById("vid"); //home video
+let video2=document.getElementById("vid2"); //campus video
+let close=document.getElementById("close"); //close button
+let change=document.getElementById("change"); //the prompting question
+var currvideo=video; //tracks which video is currently playing
+var homewatch=false; //checks if home video has been opened
+var campuswatch=false; //checks if campus video has been opened
+
+
 
 
 
 //START PAGE INTERACTIVITY
 
-//Icon Hocer Events
+//Icon Hover Events
 //hover on icon makes icon colored, makes trailer visible and plays it on loop
 homeicon.addEventListener('mouseover', () => {
 	homeicon.src="./images/colored home.png";
@@ -45,6 +51,9 @@ homeicon.addEventListener('click', () => {
 	//shows associated video and the close button
 	video.style.display="block";
 	close.style.display="block";
+	//sets home video as current and watched
+	currvideo = video;
+	homewatch=true;
 	
 	//hides icons and question while video plays
 	homeicon.style.display="none";
@@ -55,6 +64,8 @@ homeicon.addEventListener('click', () => {
 campusicon.addEventListener('click', () => {
 	video2.style.display="block";
 	close.style.display="block";
+	currvideo = video2;
+	campuswatch=true;
 	
 	homeicon.style.display="none";
 	campusicon.style.display="none";
@@ -64,9 +75,23 @@ campusicon.addEventListener('click', () => {
 
 //Close Button Click
 close.addEventListener('click', () => {
-	//refreshes the page to make sure video stops playing
-	//returns to original page look
-	window.location.reload();
+	//stops playing the video on close
+	currvideo.pause();
 
+	//hides the video playing elements
+	close.style.display="none";
+	currvideo.style.display="none";
+	//displays start page elements
+	homeicon.style.display="block";
+	campusicon.style.display="block";
+	question.style.visibility="visible";
+	
+	//changes prompting question after one video has been opened
+	change.innerHTML="Want to see the other side?";
 
+	//if both videos have been opened then the prompting questions go away
+	if(homewatch & campuswatch){
+	change.style.visibility="hidden";
+	}
 })
+

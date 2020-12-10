@@ -13,11 +13,24 @@ body{
 	flex-direction: column;
 }
 
+/*text at top*/
 .question{
 	width: 100%
-	height:20%;
-	font-size: 3em;
+	height:18%;
+	font-size: 2.25em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*title*/
+h1{
 	text-align: center;
+	font-size: 1.3em;
+}
+/*prompting question*/
+#change{
+	margin:0;
+	border: 2px solid black;
 }
 
 .screens{
@@ -75,8 +88,8 @@ body{
 
 /*no display till icon clicked and video positioning*/
 .vid{
-	width: 100%;
-	height:100%;
+	width: 70%;
+	height:80%;
 	display: none;
 	position: absolute;
 	top:10%;
@@ -87,18 +100,18 @@ body{
 .close{
 	position: absolute;
 	top:10%;
-	right: 11%;
+	right: 15%;
 	display: none;
 	background-color: transparent;
 	border: none;
 	color: black;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 /*highlights close button on hover*/
 .close:hover{
 	cursor: pointer;
 	outline: 1px solid white;
-	font-size: 2em;
+	font-size: 1.25em;
 }
 
 
