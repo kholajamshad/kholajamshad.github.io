@@ -1,27 +1,36 @@
+//initializes the default introduction tiles
 let card1=document.getElementById("intro1");
 let card2=document.getElementById("intro2");
 
-let fbimg=document.getElementById("fruitsbasketimg");
+//code for each of the 10 tiles
+//TILE 1
+let fbimg=document.getElementById("fruitsbasketimg"); //holds image
 
-	var fbcounter = 0;
+	var fbcounter = 0; //tracks number of clicks on tile
 
 fbimg.onclick = function(){
+    //subject icon appears on clicked tile
+    //changes intro tiles to tiles of chosen subject
     if(fbcounter == 0){
         fbimg.src = "fruitsbasket.png";
         card1.src = "fbintro1.png";
         card2.src = "fbintro2.png";
         fbcounter++;
     }
+    
+    //hides icon again on clicked tile
+    //changes tiles back to default intro
+    //repeats on alternate clicks
     else if(fbcounter == 1){
         fbimg.src = "blackbox.png";
         card2.src = "intro2.png";
         card1.src = "intro1.png";
         fbcounter=0;
     }
-
 };
 
 
+//TILE 2
 let bthimg=document.getElementById("bthimg");
 
 	var bthcounter = 0;
@@ -42,6 +51,8 @@ bthimg.onclick = function(){
 
 };
 
+
+//TILE 3
 let rwbyimg=document.getElementById("rwbyimg");
 
 	var rwbycounter = 0;
@@ -63,6 +74,7 @@ rwbyimg.onclick = function(){
 };
 
 
+//TILE 4
 let natimg=document.getElementById("natsumeimg");
 
 	var natcounter = 0;
@@ -84,6 +96,7 @@ natimg.onclick = function(){
 };
 
 
+//TILE 5
 let aosimg=document.getElementById("aosimg");
 
 	var aoscounter = 0;
@@ -105,6 +118,7 @@ aosimg.onclick = function(){
 };
 
 
+//TILE 6
 let covidimg=document.getElementById("covidimg");
 
 	var covidcounter = 0;
@@ -126,6 +140,8 @@ covidimg.onclick = function(){
 };
 
 
+
+//TILE 7
 let hxhimg=document.getElementById("hxhimg");
 
 	var hxhcounter = 0;
@@ -147,6 +163,7 @@ hxhimg.onclick = function(){
 };
 
 
+//TILE 8
 let berimg=document.getElementById("berserkimg");
 
 	var bercounter = 0;
@@ -168,6 +185,7 @@ berimg.onclick = function(){
 };
 
 
+//TILE 9
 let graphimg=document.getElementById("graphimg");
 
 	var graphcounter = 0;
@@ -189,6 +207,7 @@ graphimg.onclick = function(){
 };
 
 
+//TILE 10
 let spiimg=document.getElementById("spiralimg");
 
 	var spicounter = 0;

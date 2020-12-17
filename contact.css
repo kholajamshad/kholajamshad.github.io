@@ -2,7 +2,7 @@ body{
 	background-color: black;
 	color: white;
 	font-size: 25px;
-	font-family: serif;
+	font-family: 'Handlee', 'Caveat', serif;
 }
 
 :root{
@@ -116,13 +116,15 @@ h1{
   margin: 0.2em;
 }
 
-/*description and contact links on the right*/
+/*description*/
 .intro{
   width: 40%;
   margin-top:0.2em;
   margin-bottom: 0.4em;
 }
 
+
+/*contact bar*/
 .contacts{
   width: 70%;
   display: flex;
@@ -155,11 +157,3 @@ h1{
   width: 4%;
 }
 
-.footer{
-  height: auto;
-  width: 100%;
-  background-color: rgb(75,0,130);
-  margin:0;
-  text-align: center;
-  font-size: 0.6em;
-}
