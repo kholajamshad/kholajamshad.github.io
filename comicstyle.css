@@ -56,10 +56,12 @@ nav ul {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 nav li {
-	margin-left: 3.5em;
+	margin-left: 1em;
+  margin-right: 1em;
 	margin-bottom: 0;
 }
   
@@ -67,7 +69,7 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1em;
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
@@ -96,7 +98,6 @@ transform: scale(1,1);
 /*Navigation Bar Ends*/
 
 
-/*Video Players and Titles Styling and Positioning*/
 /*Whole page display*/
 .container{
   display:flex;
@@ -129,7 +130,7 @@ transform: scale(1,1);
   margin-top: 0;
 }
 
-/*Video + Description + Artist display*/
+/*Icon + Description*/
 .contentdiv{
   width: 100%;
   display:flex;

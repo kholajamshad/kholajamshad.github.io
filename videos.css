@@ -56,10 +56,12 @@ nav ul {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 nav li {
-	margin-left: 3.5em;
+	margin-left: 1em;
+  margin-right: 1em;
 	margin-bottom: 0;
 }
 
@@ -67,7 +69,7 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
@@ -143,51 +145,6 @@ transform: scale(1,1);
   flex-wrap: wrap;
 }
 
-/*Description + Artist display*/
-/*
-.introdiv{
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-*/
-/*Artist section display*/
-/*
-.artists{
-  width: 100%;
-  height: 40%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-Individual artist boxes
-.art{
-  width: 45%;
-  height: 100%;
-  border: black solid 5px;
-  border-radius: 30%;
-  text-align: center;
-}
-
-/*Artist icons styling and enlarging on hover
-.art img{
-  width: 85%;
-}
-.art img:hover{
-  width: 95%;
-  cursor: pointer;
-}
-
-/*Description
-.intro{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-size: 1.2em;  
-}
-*/
 /*Cover image*/
 .icon{
   width:60%;

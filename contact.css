@@ -47,10 +47,12 @@ nav ul {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 nav li {
-	margin-left: 3em;
+	margin-left: 1em;
+  margin-right: 1em;
 	margin-bottom: 0;
 }
 
@@ -58,7 +60,7 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
