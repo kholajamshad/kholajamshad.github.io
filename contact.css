@@ -148,10 +148,12 @@ h1{
 /*contact bar*/
 .contacts{
   width: 70%;
+  min-width: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 1em;
+  flex-wrap: wrap;
 }
 
 .email{
