@@ -19,13 +19,13 @@ a{
 }
 
 
-
+/*Navigation Bar Starts*/
 :root{
-	--background: rgba(75,0,130,.75);
+  --background: rgba(75,0,130,.9);
 }
 
 *, *::before,*::after{
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
@@ -39,8 +39,6 @@ header {
   border: 0px;
 }
 
-
-/*Navigation Bar Starts*/
 nav {
     position: relative;
     width:100%;
@@ -56,7 +54,6 @@ nav {
     align-items: center;
   }
 
-
 nav ul {
   margin: 0;
   padding: 0;
@@ -66,9 +63,9 @@ nav ul {
 }
 
 nav li {
-	margin-left: 1em;
+  margin-left: 1em;
   margin-right: 1em;
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
   
 /*navigation link styling*/
@@ -100,7 +97,8 @@ transition: transform ease-in-out 250ms;
 nav a:hover::before {
 transform: scale(1,1);
 }
-/*Nav bar ends*/
+/*Navigation Bar Ends*/
+
 
 /*Whole Body Flex Display for the 3 rows*/
 .container{
