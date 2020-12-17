@@ -26,6 +26,25 @@ header {
 
 
 /*Navigation Bar Starts*/
+:root{
+  --background: rgba(75,0,130,.9);
+}
+
+*, *::before,*::after{
+  box-sizing: border-box;
+}
+
+header {
+  background: var(--background);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  border: 0px;
+}
+
 nav {
     position: relative;
     width:100%;
@@ -37,10 +56,9 @@ nav {
     left: initial;
     grid-column: 3 / 4;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
-
 
 nav ul {
   margin: 0;
@@ -51,12 +69,12 @@ nav ul {
 }
 
 nav li {
-	margin-left: 1em;
+  margin-left: 1em;
   margin-right: 1em;
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
-
-/*navigation link styling*/  
+  
+/*navigation link styling*/
 nav a {
   color: white;
   text-decoration: none;
@@ -86,7 +104,8 @@ transition: transform ease-in-out 250ms;
 nav a:hover::before {
 transform: scale(1,1);
 }
-/*Nav bar ends*/
+/*Navigation Bar Ends*/
+
 
 /*Whole page display*/
 .container{
